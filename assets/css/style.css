@@ -271,4 +271,10 @@ img {
     background-color: var(--color-base2);
     border-radius: 100px;
     font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+transform: translateY(-6px);
+color:#c084fc;
 }
