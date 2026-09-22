@@ -294,3 +294,32 @@ img {
     transform: translateY(-6px);
     color: #c084fc;
 }
+
+.error-message{
+    color:#ff4d4d;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+.show-error{
+    display: block;
+}
+.error{
+    border: 1px solid #ff4d4d !important;
+}
+
+.success-message{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0,255,150,0.1);
+    color: #00ffcc;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    transition: 0.3s;
+}
+
+.show-success{
+    display: block;
+}

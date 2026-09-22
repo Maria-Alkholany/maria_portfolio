@@ -13,3 +13,53 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  let isValide = true;
+
+  let name = document.querySelector(".name");
+  let email = document.querySelector(".email");
+  let subject = document.querySelector(".subject");
+
+  let textPattern = /^[A-Za-z\s]+$/;
+  let emailPattern = /[^\s]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!textPattern.test(name.value.trim())) {
+    name.classList.add("error");
+    name.nextElementSibling.classList.add("show-error");
+    isValide = false;
+  }
+
+  if (!emailPattern.test(email.value.trim())) {
+    email.classList.add("error");
+    email.nextElementSibling.classList.add("show-error");
+    isValide = false;
+  }
+
+  if (!textPattern.test(subject.value.trim())) {
+    subject.classList.add("error");
+    subject.nextElementSibling.classList.add("show-error");
+    isValide = false;
+  }
+
+  if (isValide) {
+    let successMsg = document.querySelector(".success-message");
+    successMsg.classList.add("show-success");
+
+    setTimeout(() => {
+
+      successMsg.classList.remove("show-success");
+
+    }, 3000);
+  }
+
+});
+
+document.querySelector("form").addEventListener("input", function (e) {
+  e.target.classList.remove("error");
+  if (e.target.nextElementSibling) {
+    e.target.nextElementSibling.classList.remove("show-error");
+  }
+});
+

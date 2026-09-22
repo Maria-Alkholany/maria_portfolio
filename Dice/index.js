@@ -1,4 +1,4 @@
-
+document.getElementById("playBtn").addEventListener("click",roleDice);
 
 function roleDice(){
 var randomNumber1= Math.floor(Math.random()*6)+1;
