@@ -45,6 +45,22 @@ img {
     width: 100%;
 }
 
+.d-lg-block,
+.skills,
+.card-custom,
+.review {
+    transition: 0.3s ease;
+}
+
+
+.d-lg-block:hover,
+.skills:hover,
+.card-custom:hover,
+.review:hover {
+    transform: translateY(-6px);
+    /* color:#c084fc; */
+}
+
 .text-brand {
     color: var(--color-body);
 }
@@ -274,7 +290,7 @@ img {
     transition: 0.3s ease;
 }
 
-.social-icons a:hover{
-transform: translateY(-6px);
-color:#c084fc;
+.social-icons a:hover {
+    transform: translateY(-6px);
+    color: #c084fc;
 }
