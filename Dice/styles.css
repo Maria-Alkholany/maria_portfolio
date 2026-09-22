@@ -2,6 +2,9 @@
   width: 70%;
   margin: auto;
   text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 
@@ -39,4 +42,17 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+
+button{
+  display: block;
+  height: 50px;
+  width: 200px;
+  background-color: rgb(158, 10, 10);
+  border-radius: 10px;
+  color: antiquewhite;
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: 'Lobster', cursive;
+  margin: 100px auto;
 }
