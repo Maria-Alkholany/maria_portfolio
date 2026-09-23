@@ -62,4 +62,3 @@ document.querySelector("form").addEventListener("input", function (e) {
     e.target.nextElementSibling.classList.remove("show-error");
   }
 });
-
